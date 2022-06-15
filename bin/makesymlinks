@@ -1,0 +1,21 @@
+
+# Link folders/files from the config folder to .config
+
+dir=$HOME/dotfiles # dotfiles directory
+
+for file in ./dots/*; do
+    filename=$(echo $file | rev | cut -d'/' -f-1 | rev)
+    
+    if [ ! -e ~/.$filename ]; then
+        echo "Creating symlink to $filename in home directory."
+        ln -s -f $dir/dots/$filename ~/.$filename
+    fi
+done
+
+for file in ./config/*; do
+    filename=$(echo $file | rev | cut -d'/' -f-1 | rev)
+    if [ ! -e ~/.config/$filename ]; then
+        echo "Creating symlink to $filename in .config directory."
+        ln -s -f $dir/config/$filename ~/.config/$filename
+    fi
+done
