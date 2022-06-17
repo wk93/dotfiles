@@ -19,6 +19,7 @@ local options = {
   splitbelow = true,                        -- force all horizontal splites to go below current window
   splitright = true,                        -- force all vertical splits to go to the right of current window
   updatetime = 300,                         -- faster completion
+  showtabline = 2,                          -- always show tabline
 }
 
 for k, v in pairs(options) do
