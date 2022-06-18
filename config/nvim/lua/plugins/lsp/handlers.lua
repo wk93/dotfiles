@@ -45,18 +45,18 @@ end
 
 local function lsp_highlight_document(client)
   -- Set autocommands conditional on server_capabilities
-    local status_ok, illuminate = pcall(require, "illuminate")
-    if not status_ok then
-      return
-    end
-    illuminate.on_attach(client)
+  local status_ok, illuminate = pcall(require, "illuminate")
+  if not status_ok then
+    return
+  end
+  illuminate.on_attach(client)
   -- end
 end
 
 local function lsp_keymaps(bufnr)
   local opts = { noremap = true, silent = true }
   local k = vim.api.nvim_buf_set_keymap;
-  
+
   k(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
   k(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
   k(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)

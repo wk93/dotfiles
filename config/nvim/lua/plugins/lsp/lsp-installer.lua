@@ -12,8 +12,18 @@ lsp_installer.on_server_ready(function(server)
 
   if server.name == "sumneko_lua" then
     local sumneko_opts = require("plugins.lsp.sumenko_lua")
-	 	opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
-	end
+    opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
+  end
+
+  if server.name == 'tsserver' then
+    local tsserver_opts = require("plugins.lsp.tsserver")
+    opts = vim.tbl_deep_extend("force", tsserver_opts, opts)
+  end
+
+  if server.name == 'tailwindcss' then
+    local tailwindcss_opts = require("plugins.lsp.tailwindcss")
+    opts = vim.tbl_deep_extend("force", tailwindcss_opts, opts)
+  end
 
   server:setup(opts)
 end)
