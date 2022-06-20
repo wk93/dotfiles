@@ -36,6 +36,18 @@ keymap("n", altK, "<Esc>:m .-2<CR>==gi", opts)
 keymap("n", altJ, "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", altK, "<Esc>:m .-2<CR>==gi", opts)
 
+-- Telescope --
+keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
+
+-- Nvim tree
+keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
+
+-- Terminal
+keymap("n", "<leader>t", "<cmd>ToggleTerm<cr>", opts)
+keymap("n", "<leader>g", "<cmd>lua _LAZYGIT_TOGGLE()<cr>", opts)
+
+
 -- VISUAL MODE
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
@@ -55,10 +67,3 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", altJ, ":move '>+1<CR>gv-gv", opts)
 keymap("x", altK, ":move '<-2<CR>gv-gv", opts)
 
--- Telescope --
-keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
-
-
--- Nvim tree
-keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
