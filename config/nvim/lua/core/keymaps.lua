@@ -1,8 +1,7 @@
 local opts = { noremap = true, silent = true }
-local term_opts = { silent = true }
 local keymap = vim.api.nvim_set_keymap
 
-local altJ = "∆" -- ∆ is os x output return ALT + j 
+local altJ = "∆" -- ∆ is os x output return ALT + j
 local altK = "Λ" -- Λ is my output return ALT + k https://superuser.com/a/463517
 
 -- space is my leader key
@@ -16,7 +15,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- file explorer 
+-- file explorer
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- resize windows with arrows
@@ -55,3 +54,7 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", altJ, ":move '>+1<CR>gv-gv", opts)
 keymap("x", altK, ":move '<-2<CR>gv-gv", opts)
+
+-- Telescope --
+keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
