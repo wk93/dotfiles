@@ -58,3 +58,7 @@ keymap("x", altK, ":move '<-2<CR>gv-gv", opts)
 -- Telescope --
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
+
+
+-- Nvim tree
+keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)

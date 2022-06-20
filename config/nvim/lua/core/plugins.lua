@@ -76,6 +76,8 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
 
+  use 'kyazdani42/nvim-tree.lua'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
