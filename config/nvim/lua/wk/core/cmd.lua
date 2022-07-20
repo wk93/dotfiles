@@ -1,4 +1,4 @@
-local log = require("wk.core.utils.log")
+local log = require("wk.core.log")
 
 
 local function validate_command(name, command, opts)

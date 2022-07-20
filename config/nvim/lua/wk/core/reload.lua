@@ -1,4 +1,4 @@
-local log = require("wk.core.utils.log");
+local log = require("wk.core.log");
 
 local function reload_nvim_config()
 	for name, _ in pairs(package.loaded) do
