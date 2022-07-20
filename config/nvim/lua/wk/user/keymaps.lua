@@ -17,3 +17,6 @@ nmap('<Up>', '')
 nmap('<Down>', '')
 nmap('<Left>', '')
 nmap('<Right>', '')
+
+-- Update config
+nmap('<Leader>rc', [[<Cmd>ReloadConfig<CR>]])
