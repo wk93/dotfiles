@@ -34,6 +34,8 @@ function M.setup(opts)
 	assign_options(opts.opts)
 	cmd("ReloadConfig", reload)
 
+	local packer = require("wk.core.packer")
+
 	opts.on_after()
 end
 
