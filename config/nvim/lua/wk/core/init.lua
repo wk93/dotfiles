@@ -1,14 +1,13 @@
 local M = {}
-
-
 local log = require("wk.core.log")
-
 
 local function validate_command(opts)
 	vim.validate({
 		opts = {opts, 'table'},
 		opts = {opts.opts, 'table'},
 		on_after = {opts.on_after, 'function'},
+		config = {opts.config, 'table'},
+		plugins_modname = {opts.config.plugins_modname, 'string'}
 	})
 end
 
@@ -35,6 +34,7 @@ function M.setup(opts)
 	cmd("ReloadConfig", reload)
 
 	local packer = require("wk.core.packer")
+	packer(opts.config.plugins_modname)
 
 	opts.on_after()
 end

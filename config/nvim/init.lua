@@ -6,4 +6,7 @@ core.setup({
 	on_after = function() 
 		require('wk.user.keymaps')
 	end,
+	config = {
+		plugins_modname = 'wk.plugins',
+	}
 })
