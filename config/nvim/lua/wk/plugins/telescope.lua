@@ -1,6 +1,6 @@
-return function (use)
+return function(use)
 	use {
 		'nvim-telescope/telescope.nvim',
-		requires = { {'nvim-lua/plenary.nvim'} }
+		requires = { { 'nvim-lua/plenary.nvim' } }
 	}
 end

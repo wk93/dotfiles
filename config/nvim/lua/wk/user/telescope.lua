@@ -41,4 +41,8 @@ function M.buffers()
 	telescope_builtin.buffers()
 end
 
+function M.find_in_buffer()
+	telescope_builtin.current_buffer_fuzzy_find({ fuzzy = false, case_mode = 'ignore_case' })
+end
+
 return M

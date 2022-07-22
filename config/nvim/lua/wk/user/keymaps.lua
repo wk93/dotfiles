@@ -1,5 +1,6 @@
 local keymap = require("wk.core.keymap")
 local telescope = require("wk.user.telescope")
+local lsp = vim.lsp
 local nmap = keymap.nmap
 local imap = keymap.imap
 local vmap = keymap.vmap
@@ -21,7 +22,11 @@ nmap('<Right>', '')
 -- Update config
 nmap('<Leader>rc', [[<Cmd>ReloadConfig<CR>]])
 
-
+-- Finding
 nmap('<Leader>ff', telescope.find_files)
 nmap('<Leader>fg', telescope.live_grep)
 nmap('<Leader>fb', telescope.buffers)
+nmap('<Leader>fi', telescope.find_in_buffer)
+
+-- LSP
+nmap('<Leader>lf', lsp.buf.formatting)
