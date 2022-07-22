@@ -3,10 +3,9 @@ local telescope = require("wk.user.telescope")
 local nmap = keymap.nmap
 local imap = keymap.imap
 local vmap = keymap.vmap
-local tmap = keymap.tmap
 
 -- Disable arrows
-imap('<Up>', '') 
+imap('<Up>', '')
 imap('<Down>', '')
 imap('<Left>', '')
 imap('<Right>', '')

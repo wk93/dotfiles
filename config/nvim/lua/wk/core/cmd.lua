@@ -3,14 +3,12 @@ local log = require("wk.core.log")
 
 local function validate_command(name, command, opts)
 	vim.validate({
-		name = {name, 'string'},
-		command = {command, {'string', 'function'}},
+		name = { name, 'string' },
+		command = { command, { 'string', 'function' } },
 
-		opts = {opts, {'table'}, true}
+		opts = { opts, { 'table' }, true }
 	})
 end
-
-
 
 local function cmd(name, command, opts)
 	local ok, errmsg = pcall(validate_command, name, command, opts)
@@ -29,6 +27,5 @@ local function cmd(name, command, opts)
 	end
 
 end
-
 
 return cmd
