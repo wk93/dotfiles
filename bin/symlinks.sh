@@ -1,8 +1,11 @@
-# Create directories if do not exist yet
+# Create directory if do not exist yet
 [ -d ~/Library/LaunchAgents ] || mkdir ~/Library/LaunchAgents
 
 # create symlink to keymap configuration
-ln -s ~/.dotfiles/macos/keymap.xml ~/Library/LaunchAgents/com.local.KeyRemapping.plist
+if [ ! -e ~/Library/LaunchAgents/com.local.KeyRemapping.plist ]; then
+        echo "Creating symlink to KeyRemapping.plist"
+	ln -s ~/.dotfiles/macos/keymap.xml ~/Library/LaunchAgents/com.local.KeyRemapping.plist
+fi
 
 # dotfiles directory
 dir=$HOME/.dotfiles 
