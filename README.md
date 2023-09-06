@@ -12,6 +12,7 @@ xcode-select --install
 
 # clone repo and create symlinks
 git clone git@github.com:wk93/dotfiles.git ~/.dotfiles
+chmod u+x ~/.dotfiles/bin/symlinks.sh
 sh ~/.dotfiles/bin/symlinks.sh
 
 # install brew
