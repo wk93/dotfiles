@@ -1,0 +1,5 @@
+# english by default
+export LC_ALL=C
+
+# for signing git commits
+export GPG_TTY=$(tty)
