@@ -1,9 +1,14 @@
-# english by default
-export LC_ALL=C
+# english utf-8 by default
+export LC_ALL=en_US.UTF-8
 
 # for signing git commits
 export GPG_TTY=$(tty)
 
+# use starship
+eval "$(starship init zsh)"
+
+
+# Plugin manager
 source ~/.antigen.zsh
 
 # Load the oh-my-zsh's library.
@@ -20,3 +25,4 @@ export NVM_LAZY_LOAD=true
 antigen bundle lukechilds/zsh-nvm
 
 antigen apply
+
