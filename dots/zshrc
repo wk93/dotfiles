@@ -15,4 +15,8 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # autosugesstions commands
 antigen bundle zsh-users/zsh-autosuggestions
 
+# nvm lazy loading
+export NVM_LAZY_LOAD=true
+antigen bundle lukechilds/zsh-nvm
+
 antigen apply
