@@ -1,0 +1,1 @@
+require("wk.core.config")
