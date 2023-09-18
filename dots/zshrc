@@ -10,6 +10,10 @@ export GPG_TTY=$(tty)
 # use starship
 eval "$(starship init zsh)"
 
+# aliases
+alias vi=nvim
+alias vim=nvim
+
 
 # Plugin manager
 source ~/.antigen.zsh
