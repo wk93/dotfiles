@@ -15,6 +15,7 @@ local opts = {
   defaults = {
     lazy = true
   },
+  colorscheme = { "nord" },
 }
 
 require("lazy").setup("wk.plugins", opts)
