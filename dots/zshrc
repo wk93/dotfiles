@@ -1,3 +1,6 @@
+# tmux autostart
+if [ "$TMUX" = "" ]; then tmux; fi
+
 # english utf-8 by default
 export LC_ALL=en_US.UTF-8
 
