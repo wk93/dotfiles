@@ -18,4 +18,4 @@ local opts = {
   colorscheme = { "nord" },
 }
 
-require("lazy").setup("wk.plugins", opts)
+require("lazy").setup({{import = "wk.plugins"}, {import = "wk.plugins.lsp"}}, opts)
