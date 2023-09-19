@@ -9,6 +9,16 @@ return {
 
     ft("lua"):fmt("lsp"):append("stylua"):lint("selene")
 
+    ft("typescript,javascript,typescriptreact"):lint({
+      cmd = "deno",
+      args = { "lint", "-" },
+      stdin = true,
+    }):fmt({
+      cmd = "deno",
+      args = { "fmt", "-" },
+      stdin = true,
+    })
+
     require("guard").setup({
       fmt_on_save = true,
       lsp_as_default_formatter = true,
