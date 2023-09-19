@@ -1,0 +1,31 @@
+{
+    "workspace.library": [
+        "/Users/wojtek/.local/share/nvim/lazy/neodev.nvim/types/stable",
+        "/usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/nvim-lspconfig/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/mason.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/telescope-file-browser.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/telescope-fzf-native.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/neodev.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/telescope.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/lazy.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/mason-lspconfig.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/plenary.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/nord.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/neodev.nvim/types/stable",
+        "/usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/nvim-lspconfig/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/mason.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/telescope-file-browser.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/telescope-fzf-native.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/neodev.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/telescope.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/lazy.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/mason-lspconfig.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/plenary.nvim/lua",
+        "/Users/wojtek/.local/share/nvim/lazy/nord.nvim/lua",
+        "/Users/wojtek/.dotfiles/config/nvim/lua",
+        "/Users/wojtek/.dotfiles/config/nvim/lua",
+        "${3rd}/luv/library"
+    ]
+}
