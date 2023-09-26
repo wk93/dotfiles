@@ -8,3 +8,15 @@ local normal = {
 }
 
 map('n', normal)
+
+-- Netrw mapping
+function NetrwMapping()
+  vim.api.nvim_buf_set_keymap(0, "n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", { noremap = true, silent = true })
+end
+
+vim.cmd([[
+  augroup netrw_mapping
+    autocmd!
+    autocmd FileType netrw lua NetrwMapping()
+  augroup END
+]])
