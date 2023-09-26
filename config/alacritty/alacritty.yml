@@ -13,6 +13,11 @@ font:
       y: 12 
     glyph_offset:
       y: 6
+window:
+  decorations: Buttonless
+  dimensions:
+    columns: 200
+    lines: 38
 colors:
     # Default colors
     primary:
