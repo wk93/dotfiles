@@ -11,6 +11,8 @@ font:
     size: 16.0
     offset:
       y: 12 
+    glyph_offset:
+      y: 6
 colors:
     # Default colors
     primary:
