@@ -54,5 +54,12 @@ return {
         lint = true,
       },
     })
+
+    lspconfig.rust_analyzer.setup({
+      capabilities = capabilities,
+      settings = {
+        ['rust-analyzer'] = {},
+      }
+    })
   end,
 }
