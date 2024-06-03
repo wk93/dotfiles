@@ -5,6 +5,8 @@
   "mason.nvim": { "branch": "main", "commit": "0950b15060067f752fde13a779a994f59516ce3d" },
   "nvim-lspconfig": { "branch": "master", "commit": "74e14808cdb15e625449027019406e1ff6dda020" },
   "nvim-treesitter": { "branch": "master", "commit": "a80fe081b4c5890980561e0de2458f64aaffbfc7" },
+  "plenary.nvim": { "branch": "master", "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683" },
+  "telescope.nvim": { "branch": "master", "commit": "dfa230be84a044e7f546a6c2b0a403c739732b86" },
   "tokyonight.nvim": { "branch": "main", "commit": "7e5ef71a103e7de5fe6c05f5d6ab97d1640f08cf" },
   "vim-tmux-navigator": { "branch": "master", "commit": "5b3c701686fb4e6629c100ed32e827edf8dad01e" }
 }
