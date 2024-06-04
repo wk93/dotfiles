@@ -8,5 +8,6 @@ return {
 	},
 	config = function()
 		require("plugins.lsp.lua_ls").setup()
+		require("plugins.lsp.rust_analyzer").setup()
 	end,
 }
