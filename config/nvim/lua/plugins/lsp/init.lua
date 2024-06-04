@@ -4,6 +4,7 @@ return {
 	dependencies = {
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
+		"hrsh7th/nvim-cmp",
 	},
 	config = function()
 		require("plugins.lsp.lua_ls").setup()
