@@ -19,6 +19,7 @@
 
     ./hardware-configuration.nix
     ./boot
+    ./hardware
     ./system
     ./nix
     ./network
