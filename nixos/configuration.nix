@@ -4,7 +4,6 @@
   inputs,
   lib,
   config,
-  pkgs,
   ...
 }: {
   # You can import other NixOS modules here
@@ -17,6 +16,8 @@
     # ./users.nix
 
     # Import your generated (nixos-generate-config) hardware configuration
+
+    ./system
     ./boot
     ./hardware-configuration.nix
   ];
@@ -83,7 +84,4 @@
       PasswordAuthentication = false;
     };
   };
-
-  # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  system.stateVersion = "23.05";
 }
