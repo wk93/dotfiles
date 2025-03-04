@@ -23,5 +23,6 @@
     ./system
     ./nix
     ./network
+    ./users
   ];
 }
