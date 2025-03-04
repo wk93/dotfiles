@@ -2,6 +2,7 @@
   lib,
   config,
   inputs,
+  ...
 }: {
   nixpkgs = {
     # You can add overlays here
