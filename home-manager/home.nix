@@ -43,7 +43,10 @@
 
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
-  # home.packages = with pkgs; [ steam ];
+  home.packages = with pkgs; [
+    _1password-cli
+    _1password-gui
+  ];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
