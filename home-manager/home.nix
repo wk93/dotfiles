@@ -54,6 +54,7 @@
     # _1password-gui
     nerd-fonts.fira-code
     wl-clipboard
+    nodejs
   ];
 
   programs.home-manager.enable = true;
