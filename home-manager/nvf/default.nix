@@ -45,6 +45,12 @@
         html.enable = true;
         css.enable = true;
       };
+
+      theme = {
+        enable = true;
+        name = "catppuccin";
+        style = "mocha";
+      };
     };
   };
 }
