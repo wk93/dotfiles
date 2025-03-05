@@ -15,6 +15,11 @@
         softtabstop = 2;
       };
 
+      git = {
+        enable = true;
+        gitsigns.enable = true;
+      };
+
       lsp = {
         formatOnSave = true;
         lspkind.enable = false;
