@@ -8,6 +8,11 @@
         "eDP-1,2560x1440,auto,1.666666"
       ];
 
+      xwayland = {
+        enabled = true;
+        force_zero_scaling = true;
+      };
+
       input = {
         kb_layout = "pl";
         kb_options = "caps:escape";
