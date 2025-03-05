@@ -11,6 +11,9 @@
 
     # Catppuccin
     catppuccin.url = "github:catppuccin/nix";
+
+    # NVF
+    nvf.url = "github:notashelf/nvf";
   };
 
   outputs = {
@@ -18,6 +21,7 @@
     nixpkgs,
     home-manager,
     catppuccin,
+    nvf,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -42,6 +46,7 @@
         modules = [
           ./home-manager/home.nix
           catppuccin.homeManagerModules.catppuccin
+          nvf.homeManagerModules.default
         ];
       };
     };
