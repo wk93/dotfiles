@@ -14,6 +14,7 @@
     ./hyprland
     ./git
     ./ssh
+    ./alacritty
     ./catppuccin
   ];
 
