@@ -50,8 +50,8 @@
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
   home.packages = with pkgs; [
-    _1password-cli
-    _1password-gui
+    # _1password-cli
+    # _1password-gui
     nerd-fonts.fira-code
     wl-clipboard
   ];
