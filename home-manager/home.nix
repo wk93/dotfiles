@@ -13,6 +13,7 @@
     # inputs.nix-colors.homeManagerModule
     ./hyprland
     ./git
+    ./ssh
   ];
 
   nixpkgs = {
