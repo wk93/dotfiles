@@ -5,6 +5,8 @@
       viAlias = true;
       vimAlias = true;
 
+      useSystemClipboard = true;
+
       options = {
         expandtab = true;
         shiftwidth = 2;

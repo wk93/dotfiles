@@ -52,6 +52,7 @@
     _1password-cli
     _1password-gui
     nerd-fonts.fira-code
+    wl-clipboard
   ];
 
   programs.home-manager.enable = true;
