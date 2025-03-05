@@ -59,6 +59,8 @@
   fonts.fontconfig.enable = true;
 
   programs.firefox.enable = true;
+  programs.lazygit.enable = true;
+
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
