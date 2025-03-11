@@ -52,6 +52,7 @@
   home.packages = with pkgs; [
     # _1password-cli
     # _1password-gui
+    brightnessctl
     nerd-fonts.fira-code
     wl-clipboard
     nodejs
