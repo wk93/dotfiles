@@ -25,6 +25,12 @@
           "$mod, B, exec, firefox"
           "$mod, return, exec, alacritty"
           "$mod, Q, killactive"
+
+          # t480
+          " , XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+          " , XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%-"
+          " , XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+"
+          " , XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
         ]
         ++ (
           # workspaces
