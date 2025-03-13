@@ -47,7 +47,11 @@
 
         nix.enable = true;
 
-        ts.enable = true;
+        ts = {
+          enable = true;
+          format.enable = true;
+          extraDiagnostics.types = [];
+        };
         tailwind.enable = true;
         html.enable = true;
         css.enable = true;
