@@ -80,6 +80,10 @@
   programs.firefox.enable = true;
   programs.lazygit.enable = true;
 
+  programs.ghostty.enable = true;
+
+  programs.tmux.enable = true;
+
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   home.stateVersion = "24.11";
 }

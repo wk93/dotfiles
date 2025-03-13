@@ -5,15 +5,15 @@
       font = {
         size = 12;
         normal = {
-          family = "Fira Code Nerd Font";
+          family = "TX-02";
           style = "Regular";
         };
         bold = {
-          family = "FiraCode Nerd Font";
+          family = "TX-02";
           style = "Bold";
         };
         italic = {
-          family = "FiraCode Nerd Font";
+          family = "TX-02";
           style = "Italic";
         };
       };
