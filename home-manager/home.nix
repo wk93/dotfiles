@@ -65,6 +65,7 @@
     fzf
     zoxide
     imagemagick
+    git-crypt
   ];
 
   programs.yazi = {
