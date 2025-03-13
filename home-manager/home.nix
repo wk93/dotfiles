@@ -19,6 +19,7 @@
     ./terminal
     ./nvf
     ./catppuccin
+    ./waybar
   ];
 
   nixpkgs = {
@@ -68,6 +69,11 @@
     imagemagick
     git-crypt
   ];
+
+  catppuccin.waybar.enable = true;
+  catppuccin.waybar.mode = "createLink";
+
+  programs.neomutt.enable = true;
 
   programs.yazi = {
     enable = true;
