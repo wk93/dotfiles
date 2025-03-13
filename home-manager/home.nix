@@ -16,7 +16,7 @@
     ./git
     ./ssh
     ./services
-    ./alacritty
+    ./terminal
     ./nvf
     ./catppuccin
   ];

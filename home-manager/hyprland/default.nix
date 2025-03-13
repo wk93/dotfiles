@@ -26,7 +26,7 @@
       bind =
         [
           "$mod, B, exec, firefox"
-          "$mod, return, exec, alacritty"
+          "$mod, return, exec, ghostty"
           "$mod, Q, killactive"
 
           # t480
