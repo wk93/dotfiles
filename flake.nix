@@ -15,7 +15,11 @@
     # NVF
     nvf.url = "github:notashelf/nvf";
 
+    # Hyprland
     hyprland.url = "github:hyprwm/Hyprland";
+
+    # Ghostty
+    ghostty.url = "github:ghostty-org/ghostty";
   };
 
   outputs = {
@@ -23,6 +27,7 @@
     nixpkgs,
     home-manager,
     catppuccin,
+    ghostty,
     nvf,
     ...
   } @ inputs: let
