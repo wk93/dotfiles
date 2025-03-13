@@ -40,6 +40,11 @@
     ];
   };
 
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+  };
+
   programs.hyprland = {
     enable = true;
     # set the flake package
