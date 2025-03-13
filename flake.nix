@@ -20,6 +20,9 @@
 
     # Ghostty
     ghostty.url = "github:ghostty-org/ghostty";
+
+    # Yazi
+    yazi.url = "github:sxyazi/yazi";
   };
 
   outputs = {

@@ -56,7 +56,21 @@
     nerd-fonts.fira-code
     wl-clipboard
     nodejs
+    ffmpeg
+    p7zip
+    jq
+    poppler
+    fd
+    ripgrep
+    fzf
+    zoxide
+    imagemagick
   ];
+
+  programs.yazi = {
+    enable = true;
+    package = inputs.yazi.packages.${pkgs.system}.default; # if you use overlays, you can omit this
+  };
 
   programs.home-manager.enable = true;
   fonts.fontconfig.enable = true;
