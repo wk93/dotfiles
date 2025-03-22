@@ -71,6 +71,7 @@
     git-crypt
     spotify
     gimp
+    postman
     bun
   ];
 
