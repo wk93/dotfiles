@@ -69,6 +69,7 @@
     zoxide
     imagemagick
     git-crypt
+    gimp
     bun
   ];
 
