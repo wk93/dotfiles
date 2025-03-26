@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   programs.nvf = {
     enable = true;
     settings.vim = {
@@ -62,6 +62,10 @@
         name = "catppuccin";
         style = "mocha";
       };
+
+      startPlugins = [
+        pkgs.vimPlugins.vim-tmux-navigator
+      ];
     };
   };
 }

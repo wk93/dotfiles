@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   programs.tmux = {
     enable = true;
     clock24 = true;
@@ -7,5 +7,10 @@
     keyMode = "vi";
     shortcut = "a";
     extraConfig = builtins.readFile ./tmux.conf;
+
+    plugins = with pkgs; [
+      tmuxPlugins.sensible
+      tmuxPlugins.vim-tmux-navigator
+    ];
   };
 }
